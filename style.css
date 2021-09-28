@@ -1,0 +1,67 @@
+/* font-family:'Inter', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+  height: 250px;
+  background: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+
+.container{
+  height: auto;
+  width: 900px;
+
+  /* background-color: aqua; */
+}
+
+.topo{
+  display: flex;
+  justify-content: space-between;
+
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 24px;
+  color: #fff;
+
+  margin-top: 41px;
+}
+
+.busca{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.busca input {
+  position: absolute;
+  width: 900px;
+  height: 65px;
+
+  top: 144px;
+  
+  font-family:'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  /* text-align: right; */
+  color: #fff;
+  opacity: 0.5;
+  
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: none;
+}
+
+.busca input::placeholder{
+  color: #fff;
+  padding-left: 64px;
+
+}
+
