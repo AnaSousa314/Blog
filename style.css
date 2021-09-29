@@ -1,9 +1,23 @@
 /* font-family:'Inter', sans-serif; */
+:root {
+  --blue: #3EA1DB;
+  --blue-dark: #574AE8;
+  --white: #FFF;
+
+  --title: #313131;
+  --text: #B6B6B6;
+  
+  --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  background-color: #F3F5F7;
 }
 
 header{
@@ -12,7 +26,7 @@ header{
   /* align-items: center; */
 
   height: 250px;
-  background: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+  background: var(--linear)
 }
 
 .container{
@@ -28,7 +42,7 @@ header{
 
   font-family: 'Lexend Deca', sans-serif;
   font-size: 24px;
-  color: #fff;
+  color: var(--white);
 
   margin-top: 41px;
 }
@@ -50,7 +64,7 @@ header{
   font-size: 18px;
   line-height: 22px;
   /* text-align: right; */
-  color: #fff;
+  color: var(--white);
   opacity: 0.5;
   
 
@@ -60,8 +74,53 @@ header{
 }
 
 .busca input::placeholder{
-  color: #fff;
+  color: var(--white);
   padding-left: 64px;
 
 }
 
+.cards{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 16px;
+
+}
+
+.card{
+  padding: 25px;
+  margin-bottom: 50px;
+
+  color: var(--text);
+
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(19, 19, 31, 0.05);
+
+  background-color: var(--white);
+}
+
+.card-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-top i{
+  color: var(--blue-dark);
+}
+
+.card-content{
+  margin-top: 22px;
+}
+
+.card-content h1{
+  margin-bottom: 8px;
+
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 32px;
+
+  color: var(--title);
+
+}
