@@ -50,15 +50,34 @@ header{
 .busca{
   display: flex;
   flex-direction: row;
+  height: 179px;
+
+  justify-content: center;
+  align-items: center;
 }
 
-
-.busca input {
-  position: absolute;
-  width: 900px;
+.busca button{
+  width: 64px;
   height: 65px;
 
-  top: 144px;
+  font-size: 18px;
+  line-height: 22px;
+
+  opacity: 0.5;
+
+  color: var(--white);
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px 0 0 5px;
+  border: none;
+}
+
+.busca input {
+  /* position: absolute; */
+  width: 836px;
+  height: 65px;
+
+  /* top: 144px; */
   
   font-family:'Inter', sans-serif;
   font-size: 18px;
@@ -69,13 +88,13 @@ header{
   
 
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;
   border: none;
 }
 
 .busca input::placeholder{
   color: var(--white);
-  padding-left: 64px;
+  /* padding-left: 64px; */
 
 }
 
