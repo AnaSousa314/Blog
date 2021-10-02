@@ -56,46 +56,35 @@ header{
   align-items: center;
 }
 
+.busca input, .busca button{
+  font-size: 18px;
+  line-height: 22px;
+
+  color: var(--white);
+  opacity: 0.5;
+
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+}
+
 .busca button{
   width: 64px;
   height: 65px;
 
-  font-size: 18px;
-  line-height: 22px;
-
-  opacity: 0.5;
-
-  color: var(--white);
-
-  background: rgba(255, 255, 255, 0.2);
   border-radius: 5px 0 0 5px;
-  border: none;
 }
 
+
 .busca input {
-  /* position: absolute; */
   width: 836px;
   height: 65px;
-
-  /* top: 144px; */
   
   font-family:'Inter', sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  /* text-align: right; */
-  color: var(--white);
-  opacity: 0.5;
-  
-
-  background: rgba(255, 255, 255, 0.2);
   border-radius: 0 5px 5px 0;
-  border: none;
 }
 
 .busca input::placeholder{
   color: var(--white);
-  /* padding-left: 64px; */
-
 }
 
 .cards{
@@ -141,5 +130,4 @@ header{
   line-height: 32px;
 
   color: var(--title);
-
 }
