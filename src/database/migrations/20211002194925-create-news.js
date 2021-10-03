@@ -1,13 +1,11 @@
-'use strict';
-
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     return await queryInterface.createTable('news', { 
       id: {
-        type: Sequelize.UUID,
-        defaultValue: Sequelize.UUIDV4,
         allowNull: false,
-        primaryKey: true
+        autoIncrement: true,
+        primaryKey: true,
+        type: Sequelize.INTEGER,
       },
       title:{
         type: Sequelize.STRING,
