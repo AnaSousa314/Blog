@@ -1,6 +1,6 @@
 const {New, sequelize} = require('../models');
 
-const HomeController = {
+const NewController = {
   index: async (req,res)=>{
     let news = await New.findAll({
       attributes:[
@@ -13,8 +13,8 @@ const HomeController = {
     })
 
     console.log(news);
-    res.render('pages/home',{news});
+    res.render('pages/new',{news});
   }
 }
 
-module.exports = HomeController;
+module.exports = NewController;
