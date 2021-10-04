@@ -47,6 +47,11 @@ header{
   margin-top: 41px;
 }
 
+.topo span a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 .busca{
   display: flex;
   flex-direction: row;
@@ -94,10 +99,14 @@ header{
 
   font-family: 'Lexend Deca', sans-serif;
   font-size: 16px;
+}
+
+.cards a{
+  text-decoration: none;
 
 }
 
-.card{
+.card,.new{
   padding: 25px;
   margin-bottom: 50px;
 
@@ -118,7 +127,7 @@ header{
   color: var(--blue-dark);
 }
 
-.card-content{
+.card-content,.new-content{
   margin-top: 22px;
 }
 
@@ -130,4 +139,23 @@ header{
   line-height: 32px;
 
   color: var(--title);
+}
+
+.new-content h1{
+  margin-bottom: 15px;
+
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 32px;
+
+  /* text-align: center; */
+
+  color: var(--title);
+}
+
+.new-content .new-data{
+  margin-top: 10px;
+
+  color: #000;
+  text-align: justify;
 }

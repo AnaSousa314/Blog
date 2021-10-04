@@ -2,7 +2,12 @@ const {New, sequelize} = require('../models');
 
 const NewController = {
   index: async (req,res)=>{
-    let news = await New.findAll({
+
+    let id =  req.params.id;
+
+    console.log(id);
+
+    let newData = await New.findByPk(id,{
       attributes:[
         'id',
         'title',
@@ -12,8 +17,8 @@ const NewController = {
       ]
     })
 
-    console.log(news);
-    res.render('pages/new',{news});
+    console.log(newData);
+    res.render('pages/new',{newData});
   }
 }
 

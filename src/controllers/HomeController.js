@@ -12,7 +12,7 @@ const HomeController = {
       ]
     })
 
-    console.log(news);
+    // console.log(news);
     res.render('pages/home',{news});
   }
 }

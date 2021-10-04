@@ -3,23 +3,26 @@
     <main class="cards">
       <div class="container">
         {{#news}}
-        <section class="card">
-          <div class="card-top">
-            <span>
-              {{date}}
-            </span> 
-            <span>
-              <i class="far fa-heart"></i>
-            </span>
-          </div>
-          <div class="card-content">
-            <h1>{{title}}</h1>
-            <p>
-              {{subtitle}}
-            </p>
-          </div>
-        </section>
-        {{/news}}
+        <a href="/new/{{id}}">
+          <section class="card">
+            <div class="card-top">
+              <span>
+                {{date}}
+              </span> 
+              <span>
+                <i class="far fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-content">
+              <h1>{{title}}</h1>
+              <p>
+                {{subtitle}}
+              </p>
+            </div>
+          </section>
+          {{/news}}
+
+        </a>
 
         
       </div>

@@ -2,8 +2,18 @@
 
 <main class="cards">
   <div class="container">
-    <h1>teste</h1>
+    {{#newData}}
+    <section class="new">
+      <div class="new-content">
+        <h1>{{title}}</h1>
+        <p>
+          {{subtitle}}
+        </p>
 
+        {{{content}}}
+      </div>
+    </section>
+    {{/newData}}
     
   </div>
 </main>
