@@ -2,9 +2,13 @@ const { Op } = require('sequelize');
 const {New, sequelize} = require('../models');
 
 const SearchController = {
-  teste: async (req,res)=>{
+  search: async (req,res)=>{
 
     let {word} =  req.query;
+
+    if(!word){
+      return res.redirect('/')
+    }
 
     let news = await New.findAll({
       where:{
@@ -21,9 +25,13 @@ const SearchController = {
       ]
     });
 
+    if(news.length < 0){
+      let 
+    }
+
     console.log(news);
 
-    res.render('pages/home',{news});
+    res.render('pages/home',{news,word});
 
   }
 }

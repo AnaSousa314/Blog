@@ -9,6 +9,6 @@ router.get('/',HomeController.index);
 
 router.get('/new/:id',NewController.index);
 
-router.get('/search',SearchController.teste);
+router.get('/search',SearchController.search);
 
 module.exports = router;
