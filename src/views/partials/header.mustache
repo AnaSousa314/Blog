@@ -28,11 +28,11 @@
       <div class="container">
         <div class="topo"><span><a href="/">Codelândia</a></span> <span>blog</span></div>
 
-        <div class="busca">
-          <button>
+        <form method="GET" action="/search" class="busca">
+          <button type="submit">
             <i class="fas fa-search"></i>
           </button>
-          <input type="search" placeholder="Pesquisar no blog" />
-        </div>
+          <input type="text" name="word" placeholder="Pesquisar no blog" />
+        </form>
       </div>
     </header>
