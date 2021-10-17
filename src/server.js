@@ -23,6 +23,6 @@ server.use((req,res)=>{
 });
 
 
-server.listen(process.env.PORT,()=> console.log('🔥Server Started!!!'));
+server.listen(process.env.PORT,()=> console.log(`🔥🔥🔥Server started at localhost:${process.env.PORT}`));
 
 

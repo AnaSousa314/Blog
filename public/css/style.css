@@ -33,12 +33,16 @@ header{
   height: auto;
   width: 900px;
 
+  padding: 0px 5px 0px 5px;
+
+
   /* background-color: aqua; */
 }
 
 .topo{
   display: flex;
   justify-content: space-between;
+  width: 100%;
 
   font-family: 'Lexend Deca', sans-serif;
   font-size: 24px;
@@ -81,7 +85,7 @@ header{
 
 
 .busca input {
-  width: 836px;
+  width: 100%;
   height: 65px;
   
   font-family:'Inter', sans-serif;
@@ -178,4 +182,23 @@ header{
 
 .no-news{
   text-align: center;
+}
+
+@media(max-width:760px){
+  /* .topo{
+    font-size: 24px;
+    
+  } */
+
+  .container{
+    padding: 0px 5px 0px 5px;
+  }
+
+  .card-content{
+    font-size: 14px;
+  }
+
+  .card-content h1{
+    font-size: 24px;
+  }
 }
